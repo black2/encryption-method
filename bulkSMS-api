@@ -234,6 +234,10 @@ URLConnection conn = url.openConnection();
   
 }
 
+ While(Array!) {
+ System.out.println(null!);
+}
+
  
  
 
