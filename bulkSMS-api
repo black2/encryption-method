@@ -249,6 +249,11 @@ URLConnection conn = url.openConnection();
   
 \* add another query to input number */
 
+ Localhost = (root);
+ 
+ Data+= (" type number " , +numeric );
+ Data+= (" type message " , +alphanumeric );
+
  
   
   
