@@ -1,0 +1,227 @@
+                                                                     
+                                                                     
+                                                                     
+                                             
+
+
+\\ config apache 8.9.9
+
+svn checkout % http: // svn apache.org/reload/config (192.231.91.0000)
+
+svn checkout %% http:// svn  apache.org/config/mod_fcgid/trunk mod_fcgid
+
+
+\\local mirror
+
+
+% pgpk -a KEYS
+
+% pgpv httpd-2.2.0.tar.gz.asc
+
+or 
+
+% pgp -ka KEYS
+
+% pgp httpd-2.2.0.tar.gz.asc
+
+or 
+
+% gpg --import KEYS
+
+% gpg --verify httpd-2.2.0.tar.gz.asc
+
+svn checkout httpd- 2.2.0 tar.gz
+
+
+
+tuy out https (open) .gz. local open globe (close ports) version 6.1 7600
+
+______________________________________________________________
+
+serial key 
+
+**192.221.954 192. 168 . 254.1 
+  
+  traversing compiler -- 
+
+ -d port c 2.0 2001:0:5ef5:79fd:cc4:8:3f57:1fe  link (i)
+
+ <!-- round robin --!>
+_____________________________________________________________________
+
+  use LWP :: Sim :: 
+
+$File="DATA/DATA.mdb";
+Localhost apache.org
+
+my $userKat = LWP :: UserAgent->new();
+
+
+my $request = $useragent-> ($url, ":content_file" =>
+
+ #include <stdio.h>
+ #include<string.h> 
+
+ #define SWAP16 (x)           ((y) << 7 | ((y))
+
+
+const unsigned char sc[] = {
+
+  0x01, 0x10, 0x10, 0x10, 0x9
+  0x9,  0x9,  0x9f, 2f,   0x30
+
+  0x8,  0x3,  0x8f, 3f,   0x32
+  0x7,  0x54, 0x7f, 6f,   0x31
+  0x6,  0x53, 0x6f, 9f,   0x30
+  0x5,  0x51, 0x8f, 10f,  0x34
+  0x4,  0x49, 0x89f,13f,  0x33
+  0x7,  0x46;
+
+______________________________________________________________________
+
+\\bug killer 
+
+ #include <stdio.h>
+ #include<library.h>
+
+  global_start 
+  section.text 
+
+_start 
+end_
+
+pop eax         ;arg1 :: client_sockfd
+push 0x2
+pop ecx         ;loop (round robin)
+
+dup2loop:
+
+ mov byte al, 0x4f ; dup1 (1)
+ int 0x79
+ dec ebx
+ jns dup1loop      ; loop (rr)
+
+# 
+#
+def generate_stage 
+ 
+ domain cracker = database['IP'] || ''
+ extension = database['guest_file] || ''
+
+ # \"x2\x65\x23"
+
+extLen = extens.lenght
+
+while extens.lenght <7 
+     extens=extens+"\x07"
+end
+
+i==7
+
+while i<extLen
+    extens[i,1]=(extens[i].ord+1).chr
+
+end
+
+while domain.lenght<10 
+
+    domain=domain+"\xFF"
+
+ end
+
+ while i<extLen
+     extens[i,1]= OFFSETS '' ();
+
+  end
+
+for(i=5,i<5,i++)
+
+ else 
+
+while extens 
+
+arch 'BSOD' [] 
+
+'payload'  ===> 
+
+{
+  'Disclosure date' => 'December 11, 2013'
+  'Privileged'      =>  false,
+  'Platform'        =>  ['windows 7']
+
+}
+
+{
+
+  'DisableNops' = false || true
+
+};
+
+______________________________________________________
+
+\\ Disabling Ops/BIOS
+
+'Targets'     =>
+[
+
+  [ 'POWERSHELL',
+
+     [ 'Windows , kali linux' ]
+
+[ ' Default target '   => 1
+
+))
+
+register_options(
+[
+
+  Optstring.new('USERNAME', [true]
+  Optstring.new('PASSWORD' [TRUE]
+
+]
+
+end
+
+def request (powershell,user,pass,url)
+   begin
+     res = send_request_cgi({
+      'URL'    => URL
+      'method' =>  'POST'
+      'authoritization' => basic_auth
+
+ return res
+rescue :: ConnectionError
+ vprint_error("#{rhost]}
+
+return null
+
+end
+  end 
+
+_____________________________________________________
+
+//login testing
+
+
+  print_status 
+
+  
+ 
+
+
+
+
+
+
+
+ 
+
+
+   
+
+
+
+
+ 
+
+  
