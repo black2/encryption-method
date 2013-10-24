@@ -253,6 +253,18 @@ URLConnection conn = url.openConnection();
  
  Data+= (" type number " , +numeric );
  Data+= (" type message " , +alphanumeric );
+ 
+ if( Data!) {
+ 
+ System.out.println( " message failed " );
+ 
+ }
+ 
+ else 
+ 
+ System.out.println( " sent " );
+ 
+ 
 
  
   
