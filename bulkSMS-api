@@ -264,6 +264,23 @@ URLConnection conn = url.openConnection();
  
  }
  
+ Localhost = root;
+ Localhost = username;
+ Localhost = password;
+ 
+ mySQL ();
+ 
+ if( Data == 2 ) {
+ 
+  System.out.println( " add another mobile number );
+  System.out.println( " input a name " );
+
+ Query ();
+ 
+ else
+ 
+  System.out.
+ 
  
 
  
