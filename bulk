@@ -1,0 +1,267 @@
+  
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+|
+   Instruction manual:   (Applicable to PDF format , Microsoft Word , Microsoft Visual basic c++ , c#                                                                                                
+|
+  1. Open this in either OS's : Linux,Windows and solaris.
+|
+  2. Run mysql apache XAMPP click port 80 to enhance the server to avoid obstruction                                     
+|    through other bulkSMS server.
+
+| 3. After that, open Microsoft Visual Basic or VB net, click Microsoft SQL in 
+    the upper part of "import link" in Microsoft Access click ODBC Database, run the code by using the external data.
+|
+  4. Last, click runtime server SMS in the XAMPP apache choose SMS,MMS database.
+|
+  5. Test your code and apply the built-in process unicode in the given manual. 
+|
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+ Click command in the below area of the XAMPP machine to fully view the code or runtime server.
+
+
+
+import <stdio.h>
+import<library.h>
+import SMS<library.h>
+
+IOS*string number = 103;
+
+ public class () {
+
+ 
+static public void main(String[] args) {
+        try {
+            // Construct data
+            String data = "";
+            
+            data += "username=" + URLEncoder.encode("myusername", "ISO-8859-1");
+            data += "&password=" + URLEncoder.encode("xxxxxx", "ISO-8859-1");
+            data += "&message=" + URLEncoder.encode("This is a test", "ISO-8859-1");
+            data += "&want_report=1";
+            data += "&msisdn=44123123123";
+
+            /
+
+ }
+} 
+ 
+ public class () {
+
+ catch () 
+
+ string = numbers + URLEncoder.encode(" mynickname" , "ISO-8849-2");
+ string = numbers + URLEncoder.encode(" myusername" , "ISO-8859-3");
+
+ BufferrReader = get BufferrReader ( try () + catch () );
+ 
+ string.compound = SMS.LOGoff (); 
+ String nearByColgs[] = [+0916 , +0923 , +0922 , +0942] , [append.type]
+ String.concat = [UNICODE , ALPHANUMERIC , NUMERIC];
+
+ String.getBytes( UTF + 12 );
+
+URLConnection conn = url.openConnection();
+            conn.setDoOutput(true);
+            OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
+            wr.write(data);
+            wr.flush();
+
+             
+            BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String line;
+            while ((line = rd.readLine()) != null) {
+                // Print the response output...
+                System.out.println(line);
+            }
+
+} 
+
+ Class () 
+
+ URLConnection conn = url.openConnection();
+           conn.setDooutput(false);
+           OutputStreamWriter wr = new OutputStreamwriter(conn.getOutputStream());
+           wr.write (data1);
+           wr.flush();
+
+           BufferedReader rd = nre BufferedReader(new InputStreamReader(conn.getInputStream());
+           String line;
+
+           while ((line = rd.readLine()) != 4) {
+             // print response ..
+
+           System.out.println(line1);
+
+
+           }
+
+}
+
+ // prints out response in corresponding query  :)
+           
+ URLEncoder conn = url.openConnection();
+
+ connection.setDOinput(true);
+ Input.JSonObject serviceObj = (JSONObject) parser.parse(new fileReader();
+ 
+ // inputs another string query 
+
+ StringJSONTxT = NEW JSONTxt.serialize () , JSON.serialize () +concat.String();
+ StringJSonObject serviceObj = new channel.basicPublish("", Pragmatech_QUeue , null , jsonText.getbytes());
+ 
+ StringJsonObject serviceObj = new channel.basicPublish();
+
+ while((line 1 = rd.readLine()) >= 5) {
+     
+        System.out.println(line1);
+
+        }
+}
+
+// prints another response in corresponding query of line 2 to the bulk SMS :)))
+
+  
+ URLEncoder conn = url.openConnection() , serialize () , JSONoBJECTS ();
+
+ connection.setDOinput(true);
+ Input.JSonObject = Object.array( 1 , 2 , 3 , 4 ,5 );
+
+
+//  prints the java object to outputstream :) 
+
+ Input.JSonObject = Objects.JsonWriter.objectToJson(emp);
+ JSonReader jr = new JsonReader(inputStream);
+ 
+ connection.setDOinput(true);
+ JsonWriter jw = new JsonWriter(outputstream);
+ JSonReader jr = new JsonReader((outputstream) +concatArray( 1 , 2 , 3 , 4 , 5));
+ 
+ \* send another data to your sms */
+
+ Input.JSonObject = Objects.JSonWriter(outputstream);
+ String values = "1|1|1|0|||0|1|||";
+
+ String[] array = values.split("\\|");
+
+ \* splitting any number signs */
+
+ String text = "A\tB\tC";
+ String delimeter = "\t"
+
+ Values array [] = new array (object.array);
+
+ strInput = KOptionPane.showInputDialog( " enter any cellphone number: ");
+
+ dblNumber = Double.parseDouble(strInput);
+
+ \* prints the string to table listing */ 
+
+ var jsonString = JsonConvvert.SerializeObject(URLConnection);
+
+ grd1 = JSonConvert.SerializeObject(URLConnection);
+ grd2 = JSOnConvert.SerializeObject(URLEncoder + concatBy + Serialize () + JSONobjects ();
+
+ connection.JDBCconnection = Array list (); 
+
+ \* get details from the mysql query database */ 
+ 
+ DatabaseMetaData md = conn.getMetaData ();
+
+ Result rs = get Result ( null , %null , %null ); 
+ Query qr = new Query ( %null , null () , concatByName );
+
+ grd3 = JSonConvert.SerializeObject(URLConnection);
+ grd4 = JSonConvert.SerializeObject(URLConnection);
+
+  exit () ;
+
+   }
+
+}
+
+\* retrieving data from xampp table list */
+
+ import java.sql.*;
+
+ public class URLConnection()  
+{
+
+ Numbers values = new Numbers ();
+
+ put.values = ("name");
+ put.values = ("password");
+
+ localhost = (root) ();
+
+ context.ExecuteStoreQuery( "SELECT * FROM MYTaBLE WHERE Field0 = {1} AND 
+ Field1 = {2}" , field0, field1)
+
+ Query values (); 
+
+ localhost = ("username" \n "password" \n "cellphone number" \n");
+ localhost lh = new localhost (); 
+
+ Query values (null);
+
+ if(Query!) {
+
+ System.out.println ( " message failed, try again " );
+
+ else 
+
+ System.out.println ( "message sent" );
+
+ }
+
+ for ( int query = 2 , 1 < query , query++) {
+
+ System.out.println ( "print any number base from root database" );
+ System.out.println ( query +values() );
+
+ }
+
+ exit ();
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+
+  
+
+ 
+
+
+
+ 
+
+ 
+ 
+ 
+ 		
