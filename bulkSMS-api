@@ -246,6 +246,12 @@ URLConnection conn = url.openConnection();
   Query values = [];
   
   }
+  
+\* add another query to input number */
+
+ 
+  
+  
  
 
  
