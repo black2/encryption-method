@@ -222,9 +222,18 @@ URLConnection conn = url.openConnection();
 
  }
 
- exit ();
 
- \*  unsigned integers can't be query use arithmetic opertions instead */
+
+ \*  unsigned integers can't be query, use arithmetic opertions instead */
+ 
+ Array [] = [ 1,2,3,4,5];
+ 
+ for ( int Array [] , 1 < Array [] , Array++ ) {
+ 
+  System.out.println ( Array [] );
+  
+}
+
  
  
 
