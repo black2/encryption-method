@@ -224,6 +224,7 @@ URLConnection conn = url.openConnection();
 
  exit ();
 
+ \*  unsigned integers can't be query use arithmetic opertions instead */
  
  
 
