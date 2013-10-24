@@ -258,11 +258,11 @@ URLConnection conn = url.openConnection();
  
  System.out.println( " message failed " );
  
- }
- 
  else 
  
  System.out.println( " sent " );
+ 
+ }
  
  
 
