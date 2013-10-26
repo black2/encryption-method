@@ -300,6 +300,18 @@ URLConnection conn = url.openConnection();
           System.out.println( " type again yor number " );
           
           }
+          
+ case 2: if( Data > Query )
+ 
+         {
+         
+         System.out.println( " choose your selected file " );
+         
+         else
+         
+         System.out.println( " error occured " );
+         
+         }
  
  
 
