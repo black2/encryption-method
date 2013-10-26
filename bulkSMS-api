@@ -281,7 +281,25 @@ URLConnection conn = url.openConnection();
  
   System.out.println( " delete thread messages " );
   
+  Query ();
+  
   }
+  
+  While (Query! ())
+  
+  switch ();
+  
+  case 1: if( Data == Query )
+  
+          {  
+          
+          System.out.println( " choose your file " );
+          
+          else 
+          
+          System.out.println( " type again yor number " );
+          
+          }
  
  
 
