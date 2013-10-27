@@ -339,8 +339,22 @@ Values () = 1,2 ---> JSonObjects ();
       name = "name";
       password = "root";
       
-      
- 
+
+}
+
+ if( users =! 0 ) 
+   {
+   
+   System.out.println( " message failed, choose again the said input from 1 to 5 " );
+   System.out.println( '+639xxxxxxxxx' , +concat (8) );
+
+  else
+  
+  System.out.println( " Cannot access data from the server " );
+  
+  }
+  
+  
 
  
  
