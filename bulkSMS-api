@@ -354,6 +354,37 @@ Values () = 1,2 ---> JSonObjects ();
   
   }
   
+Array = id () {
+
+  number = '+639xxxxxxxxx' StringToNumber ();
+  DataString = 'Alphanumeric' NumberToString ();
+  
+  
+ QueryResults () = '1 , 2 , 3 , 4 ,5';
+ 
+ While(QueryResults ()!) 
+   {
+   
+      Array = id ();
+        put.values = ("name");
+        put.values = ("password");
+      
+    }
+    
+ put.values = ("number");
+ 
+ Index.putValues ( '+639xxxxxxxxx' );
+ 
+
+ 
+    
+    
+    
+ 
+ 
+ 
+  
+
   
 
  
