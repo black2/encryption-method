@@ -312,6 +312,21 @@ URLConnection conn = url.openConnection();
          System.out.println( " error occured " );
          
          }
+         
+switch ();
+exit ()
+
+}
+
+ Query ();
+ 
+ Localhost = "username";
+ Localhost = "root";
+ Localhost = "password";
+ 
+Values () = 1,2 ---> JSonObjects ();
+ 
+
  
  
 
