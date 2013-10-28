@@ -374,6 +374,9 @@ Array = id () {
  put.values = ("number");
  
  Index.putValues ( '+639xxxxxxxxx' );
+ Index.putVlues ( '+639xxxxxxxxx' );
+ 
+ 
  
 
  
