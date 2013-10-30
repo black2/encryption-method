@@ -389,6 +389,8 @@ if(Array () > 320)
  
  exit ();
  
+  System.out.exit ()
+ 
  
  
  
