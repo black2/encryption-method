@@ -376,6 +376,21 @@ Array = id () {
  Index.putValues ( '+639xxxxxxxxx' );
  Index.putVlues ( '+639xxxxxxxxx' );
  
+ number = '+639xxxxxxxxx' StringToNumber ();
+ DataString = 'Alphanumeric' NumberToString ();
+
+if(Array () > 320)
+{
+
+ System.out.println( "type again" );
+ 
+ }
+  
+ 
+ exit ();
+ 
+ 
+ 
  
  
 
