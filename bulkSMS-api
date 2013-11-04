@@ -398,9 +398,13 @@ if(Array () > 320)
  if(Array () < 320)
  {
    
-   System.out.println(" check another num ber ");
+   System.out.println(" check another number ");
    
    }
+   
+ else 
+ 
+ System.out.println(" print another data ");
  
  
  
