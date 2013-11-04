@@ -203,7 +203,31 @@ _____________________________________________________
 //login testing
 
 
-  print_status 
+  print_status "vprint_error"("#"{rhost})
+  
+  return null
+  
+  end;
+  
+  login_testing; 
+  
+  off(:loop)
+  
+   print("  echo start " );
+   :loop 
+   
+   {
+   
+   logout ("print status");
+   
+   }
+   
+   register_options{
+   
+   VString( ' echo off ' );
+   'payload'( " off " );
+   
+   }
 
   
  
