@@ -391,7 +391,16 @@ if(Array () > 320)
  
  System.out.println(" tyoe again your message ");
  
- exit ();
+ Query values ();
+ 
+ DataString = 'Alphanumeric' NumberToString ();
+ 
+ if(Array () < 320)
+ {
+   
+   System.out.println(" check another num ber ");
+   
+   }
  
  
  
