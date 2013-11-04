@@ -346,6 +346,14 @@ int main ()
  window.console <----> console.window ();
  switch ();
 
+ window.console <----->console.window ();
+ switch ();
+ 
+ catch{
+ 
+ window.console();
+ assembly.rar ();
+ 
  exit ();
 
 
