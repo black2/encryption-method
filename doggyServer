@@ -357,6 +357,8 @@ int main ()
  window.console();
  System.console ( "press 7 to skip options" );
  
+ System.console  ();
+ 
  exit ();
 
 
