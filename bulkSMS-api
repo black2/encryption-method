@@ -387,9 +387,11 @@ if(Array () > 320)
  }
   
  
- exit ();
+ else
  
-  System.out.exit ()
+ System.out.println(" tyoe again your message ");
+ 
+ exit ();
  
  
  
