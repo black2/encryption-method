@@ -354,6 +354,9 @@ int main ()
  window.console();
  assembly.rar ();
  
+ window.console();
+ System.console ( "press 7 to skip options" );
+ 
  exit ();
 
 
