@@ -105,6 +105,17 @@ $fp = fopen ($file, "w");
 
 $ftp== buff ();
 
-// www.l33tday.com 
+if(bit:seq:count:capacity:1228800 util:48%) {
 
-exit (); 
+${ADD} forward -j MASQ -P TCP -s localnet/8 -d 0/0
+${ADD} forward -j MASQ -p UDP -s localnet/8 -d 0/0
+${ADD} forward -j MASQ -p IP  -s localnet/8 -d 0/0
+
+else {
+
+${ADD} forward -j MASQ -p
+
+exit ();
+
+
+
