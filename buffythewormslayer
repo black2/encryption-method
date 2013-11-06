@@ -113,7 +113,37 @@ ${ADD} forward -j MASQ -p IP  -s localnet/8 -d 0/0
 
 else {
 
-${ADD} forward -j MASQ -p
+acl_proxy_hide(hash:MD5)
+
+set time_16:03
+time lapse_17:04
+
+lapse_22:05
+
+set: goto:loop 
+
+unknown_Guest6_off
+
+execute ();
+sleep ();
+
+positive_dns_ttl_ 1 hour
+negative_dns_ttl_ 5 hours
+
+client (Guest6) ();
+hostname: black2 
+
+activate: () ;
+CC type: none () ;
+
+shell execution () ;
+round robin worm () ;
+
+if(round robin worm ()) == time lapse) {
+
+ set_time(24hrs) 
+
+}
 
 exit ();
 
