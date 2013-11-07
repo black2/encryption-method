@@ -145,7 +145,17 @@ if(round robin worm ()) == time lapse) {
 
 }
 
-exit ();
+ else
+ 
+ set_time(24 hrs + 36 hrs);
+ 
+ execution_stop ()
+ rand();
+ 
+ lapse_22:05
+ arpd 0/24
+ honeyd -p nmap.prints -f honeyd.conf 
 
+exit (); 
 
 
