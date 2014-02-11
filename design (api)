@@ -1,0 +1,346 @@
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmCalculate
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCalculate))
+        Me.lvEmployee = New System.Windows.Forms.ListView
+        Me.ColumnHeader1 = New System.Windows.Forms.ColumnHeader
+        Me.ColumnHeader2 = New System.Windows.Forms.ColumnHeader
+        Me.ColumnHeader3 = New System.Windows.Forms.ColumnHeader
+        Me.ColumnHeader4 = New System.Windows.Forms.ColumnHeader
+        Me.ColumnHeader5 = New System.Windows.Forms.ColumnHeader
+        Me.ColumnHeader6 = New System.Windows.Forms.ColumnHeader
+        Me.ColumnHeader7 = New System.Windows.Forms.ColumnHeader
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.Label5 = New System.Windows.Forms.Label
+        Me.Label6 = New System.Windows.Forms.Label
+        Me.Label7 = New System.Windows.Forms.Label
+        Me.Label8 = New System.Windows.Forms.Label
+        Me.Label9 = New System.Windows.Forms.Label
+        Me.txtEmpNo = New System.Windows.Forms.TextBox
+        Me.txtEmpName = New System.Windows.Forms.TextBox
+        Me.txtPosition = New System.Windows.Forms.TextBox
+        Me.txtRate = New System.Windows.Forms.TextBox
+        Me.txtDays = New System.Windows.Forms.TextBox
+        Me.txtGPay = New System.Windows.Forms.TextBox
+        Me.txtCashAdvance = New System.Windows.Forms.TextBox
+        Me.txtDed = New System.Windows.Forms.TextBox
+        Me.txtNPay = New System.Windows.Forms.TextBox
+        Me.cmdPrint = New System.Windows.Forms.Button
+        Me.PrintForm1 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
+        Me.cmdSave = New System.Windows.Forms.Button
+        Me.SuspendLayout()
+        '
+        'lvEmployee
+        '
+        Me.lvEmployee.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
+        Me.lvEmployee.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lvEmployee.FullRowSelect = True
+        Me.lvEmployee.GridLines = True
+        Me.lvEmployee.Location = New System.Drawing.Point(0, 0)
+        Me.lvEmployee.Name = "lvEmployee"
+        Me.lvEmployee.Size = New System.Drawing.Size(884, 242)
+        Me.lvEmployee.TabIndex = 1
+        Me.lvEmployee.UseCompatibleStateImageBehavior = False
+        Me.lvEmployee.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Employee Number"
+        Me.ColumnHeader1.Width = 129
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Employee Name"
+        Me.ColumnHeader2.Width = 227
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "Position"
+        Me.ColumnHeader3.Width = 153
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Rate Per Day"
+        Me.ColumnHeader4.Width = 98
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Gender"
+        Me.ColumnHeader5.Width = 87
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Address"
+        Me.ColumnHeader6.Width = 241
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "Phone"
+        Me.ColumnHeader7.Width = 188
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(23, 273)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(128, 17)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Employee Number:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(23, 305)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(115, 17)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Employee Name:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(23, 335)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(62, 17)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Position:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(23, 366)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(42, 17)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "Rate:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(23, 396)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(100, 17)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "Working Days:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(20, 427)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(121, 20)
+        Me.Label6.TabIndex = 7
+        Me.Label6.Text = "GROSS PAY:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(421, 273)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(103, 17)
+        Me.Label7.TabIndex = 8
+        Me.Label7.Text = "Cash Advance:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(421, 305)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(123, 17)
+        Me.Label8.TabIndex = 9
+        Me.Label8.Text = "Other Deductions:"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(420, 335)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(92, 20)
+        Me.Label9.TabIndex = 10
+        Me.Label9.Text = "NET PAY:"
+        '
+        'txtEmpNo
+        '
+        Me.txtEmpNo.Enabled = False
+        Me.txtEmpNo.Location = New System.Drawing.Point(157, 268)
+        Me.txtEmpNo.Name = "txtEmpNo"
+        Me.txtEmpNo.Size = New System.Drawing.Size(258, 22)
+        Me.txtEmpNo.TabIndex = 11
+        '
+        'txtEmpName
+        '
+        Me.txtEmpName.Enabled = False
+        Me.txtEmpName.Location = New System.Drawing.Point(157, 300)
+        Me.txtEmpName.Name = "txtEmpName"
+        Me.txtEmpName.Size = New System.Drawing.Size(258, 22)
+        Me.txtEmpName.TabIndex = 12
+        '
+        'txtPosition
+        '
+        Me.txtPosition.Enabled = False
+        Me.txtPosition.Location = New System.Drawing.Point(157, 332)
+        Me.txtPosition.Name = "txtPosition"
+        Me.txtPosition.Size = New System.Drawing.Size(258, 22)
+        Me.txtPosition.TabIndex = 13
+        '
+        'txtRate
+        '
+        Me.txtRate.Enabled = False
+        Me.txtRate.Location = New System.Drawing.Point(157, 361)
+        Me.txtRate.Name = "txtRate"
+        Me.txtRate.Size = New System.Drawing.Size(258, 22)
+        Me.txtRate.TabIndex = 14
+        '
+        'txtDays
+        '
+        Me.txtDays.Location = New System.Drawing.Point(157, 391)
+        Me.txtDays.Name = "txtDays"
+        Me.txtDays.Size = New System.Drawing.Size(258, 22)
+        Me.txtDays.TabIndex = 15
+        '
+        'txtGPay
+        '
+        Me.txtGPay.Enabled = False
+        Me.txtGPay.Location = New System.Drawing.Point(157, 427)
+        Me.txtGPay.Name = "txtGPay"
+        Me.txtGPay.Size = New System.Drawing.Size(258, 22)
+        Me.txtGPay.TabIndex = 16
+        '
+        'txtCashAdvance
+        '
+        Me.txtCashAdvance.Location = New System.Drawing.Point(554, 268)
+        Me.txtCashAdvance.Name = "txtCashAdvance"
+        Me.txtCashAdvance.Size = New System.Drawing.Size(258, 22)
+        Me.txtCashAdvance.TabIndex = 17
+        '
+        'txtDed
+        '
+        Me.txtDed.Location = New System.Drawing.Point(554, 302)
+        Me.txtDed.Name = "txtDed"
+        Me.txtDed.Size = New System.Drawing.Size(258, 22)
+        Me.txtDed.TabIndex = 18
+        '
+        'txtNPay
+        '
+        Me.txtNPay.Enabled = False
+        Me.txtNPay.Location = New System.Drawing.Point(554, 335)
+        Me.txtNPay.Name = "txtNPay"
+        Me.txtNPay.Size = New System.Drawing.Size(258, 22)
+        Me.txtNPay.TabIndex = 19
+        '
+        'cmdPrint
+        '
+        Me.cmdPrint.Location = New System.Drawing.Point(428, 398)
+        Me.cmdPrint.Name = "cmdPrint"
+        Me.cmdPrint.Size = New System.Drawing.Size(136, 29)
+        Me.cmdPrint.TabIndex = 20
+        Me.cmdPrint.Text = "Print Payslip"
+        Me.cmdPrint.UseVisualStyleBackColor = True
+        '
+        'PrintForm1
+        '
+        Me.PrintForm1.DocumentName = "document"
+        Me.PrintForm1.Form = Me
+        Me.PrintForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPrinter
+        Me.PrintForm1.PrinterSettings = CType(resources.GetObject("PrintForm1.PrinterSettings"), System.Drawing.Printing.PrinterSettings)
+        Me.PrintForm1.PrintFileName = Nothing
+        '
+        'cmdSave
+        '
+        Me.cmdSave.Location = New System.Drawing.Point(570, 398)
+        Me.cmdSave.Name = "cmdSave"
+        Me.cmdSave.Size = New System.Drawing.Size(136, 29)
+        Me.cmdSave.TabIndex = 21
+        Me.cmdSave.Text = "Save"
+        Me.cmdSave.UseVisualStyleBackColor = True
+        '
+        'frmCalculate
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(884, 555)
+        Me.Controls.Add(Me.cmdSave)
+        Me.Controls.Add(Me.cmdPrint)
+        Me.Controls.Add(Me.txtNPay)
+        Me.Controls.Add(Me.txtDed)
+        Me.Controls.Add(Me.txtCashAdvance)
+        Me.Controls.Add(Me.txtGPay)
+        Me.Controls.Add(Me.txtDays)
+        Me.Controls.Add(Me.txtRate)
+        Me.Controls.Add(Me.txtPosition)
+        Me.Controls.Add(Me.txtEmpName)
+        Me.Controls.Add(Me.txtEmpNo)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lvEmployee)
+        Me.Name = "frmCalculate"
+        Me.Text = "frmCalculate"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents lvEmployee As System.Windows.Forms.ListView
+    Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader4 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader5 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader6 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader7 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents txtEmpNo As System.Windows.Forms.TextBox
+    Friend WithEvents txtEmpName As System.Windows.Forms.TextBox
+    Friend WithEvents txtPosition As System.Windows.Forms.TextBox
+    Friend WithEvents txtRate As System.Windows.Forms.TextBox
+    Friend WithEvents txtDays As System.Windows.Forms.TextBox
+    Friend WithEvents txtGPay As System.Windows.Forms.TextBox
+    Friend WithEvents txtCashAdvance As System.Windows.Forms.TextBox
+    Friend WithEvents txtDed As System.Windows.Forms.TextBox
+    Friend WithEvents txtNPay As System.Windows.Forms.TextBox
+    Friend WithEvents cmdPrint As System.Windows.Forms.Button
+    Friend WithEvents PrintForm1 As Microsoft.VisualBasic.PowerPacks.Printing.PrintForm
+    Friend WithEvents cmdSave As System.Windows.Forms.Button
+End Class
