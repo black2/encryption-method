@@ -1,0 +1,279 @@
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmUser
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel
+        Me.lvUser = New System.Windows.Forms.ListView
+        Me.ColumnHeader1 = New System.Windows.Forms.ColumnHeader
+        Me.ColumnHeader2 = New System.Windows.Forms.ColumnHeader
+        Me.ColumnHeader3 = New System.Windows.Forms.ColumnHeader
+        Me.ColumnHeader4 = New System.Windows.Forms.ColumnHeader
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.cmdCancel = New System.Windows.Forms.Button
+        Me.cmdSave = New System.Windows.Forms.Button
+        Me.txtRealname = New System.Windows.Forms.TextBox
+        Me.cboRole = New System.Windows.Forms.ComboBox
+        Me.txtPassword = New System.Windows.Forms.TextBox
+        Me.txtUsername = New System.Windows.Forms.TextBox
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.CalculateSalaryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.TableLayoutPanel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.70454!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.29546!))
+        Me.TableLayoutPanel1.Controls.Add(Me.lvUser, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 1, 0)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 1
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(880, 423)
+        Me.TableLayoutPanel1.TabIndex = 0
+        '
+        'lvUser
+        '
+        Me.lvUser.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
+        Me.lvUser.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lvUser.FullRowSelect = True
+        Me.lvUser.GridLines = True
+        Me.lvUser.Location = New System.Drawing.Point(3, 3)
+        Me.lvUser.Name = "lvUser"
+        Me.lvUser.Size = New System.Drawing.Size(492, 417)
+        Me.lvUser.TabIndex = 0
+        Me.lvUser.UseCompatibleStateImageBehavior = False
+        Me.lvUser.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Username"
+        Me.ColumnHeader1.Width = 149
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Password"
+        Me.ColumnHeader2.Width = 132
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "Role"
+        Me.ColumnHeader3.Width = 96
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Realname"
+        Me.ColumnHeader4.Width = 111
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.cmdCancel)
+        Me.GroupBox1.Controls.Add(Me.cmdSave)
+        Me.GroupBox1.Controls.Add(Me.txtRealname)
+        Me.GroupBox1.Controls.Add(Me.cboRole)
+        Me.GroupBox1.Controls.Add(Me.txtPassword)
+        Me.GroupBox1.Controls.Add(Me.txtUsername)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox1.Location = New System.Drawing.Point(501, 3)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(376, 417)
+        Me.GroupBox1.TabIndex = 1
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "User Info"
+        '
+        'cmdCancel
+        '
+        Me.cmdCancel.Location = New System.Drawing.Point(202, 181)
+        Me.cmdCancel.Name = "cmdCancel"
+        Me.cmdCancel.Size = New System.Drawing.Size(127, 54)
+        Me.cmdCancel.TabIndex = 17
+        Me.cmdCancel.Text = "&Cancel"
+        Me.cmdCancel.UseVisualStyleBackColor = True
+        Me.cmdCancel.Visible = False
+        '
+        'cmdSave
+        '
+        Me.cmdSave.Location = New System.Drawing.Point(48, 181)
+        Me.cmdSave.Name = "cmdSave"
+        Me.cmdSave.Size = New System.Drawing.Size(127, 54)
+        Me.cmdSave.TabIndex = 16
+        Me.cmdSave.Text = "&Save"
+        Me.cmdSave.UseVisualStyleBackColor = True
+        Me.cmdSave.Visible = False
+        '
+        'txtRealname
+        '
+        Me.txtRealname.Enabled = False
+        Me.txtRealname.Location = New System.Drawing.Point(112, 124)
+        Me.txtRealname.Name = "txtRealname"
+        Me.txtRealname.Size = New System.Drawing.Size(185, 22)
+        Me.txtRealname.TabIndex = 7
+        '
+        'cboRole
+        '
+        Me.cboRole.Enabled = False
+        Me.cboRole.FormattingEnabled = True
+        Me.cboRole.Items.AddRange(New Object() {"admin", "user"})
+        Me.cboRole.Location = New System.Drawing.Point(112, 94)
+        Me.cboRole.Name = "cboRole"
+        Me.cboRole.Size = New System.Drawing.Size(186, 24)
+        Me.cboRole.TabIndex = 6
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Enabled = False
+        Me.txtPassword.Location = New System.Drawing.Point(112, 65)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(185, 22)
+        Me.txtPassword.TabIndex = 5
+        '
+        'txtUsername
+        '
+        Me.txtUsername.Enabled = False
+        Me.txtUsername.Location = New System.Drawing.Point(112, 36)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(185, 22)
+        Me.txtUsername.TabIndex = 4
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(29, 129)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(76, 17)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Realname:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(29, 101)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(41, 17)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Role:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(29, 70)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(73, 17)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Password:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(29, 41)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(77, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Username:"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddToolStripMenuItem, Me.EditToolStripMenuItem, Me.DeleteToolStripMenuItem, Me.CalculateSalaryToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(184, 100)
+        '
+        'AddToolStripMenuItem
+        '
+        Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
+        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(183, 24)
+        Me.AddToolStripMenuItem.Text = "&Add"
+        '
+        'EditToolStripMenuItem
+        '
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(183, 24)
+        Me.EditToolStripMenuItem.Text = "&Edit"
+        '
+        'DeleteToolStripMenuItem
+        '
+        Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(183, 24)
+        Me.DeleteToolStripMenuItem.Text = "&Delete"
+        '
+        'CalculateSalaryToolStripMenuItem
+        '
+        Me.CalculateSalaryToolStripMenuItem.Name = "CalculateSalaryToolStripMenuItem"
+        Me.CalculateSalaryToolStripMenuItem.Size = New System.Drawing.Size(183, 24)
+        Me.CalculateSalaryToolStripMenuItem.Text = "&Calculate Salary"
+        '
+        'frmUser
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(880, 423)
+        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Name = "frmUser"
+        Me.Text = "frmUser"
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents lvUser As System.Windows.Forms.ListView
+    Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader4 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents txtRealname As System.Windows.Forms.TextBox
+    Friend WithEvents cboRole As System.Windows.Forms.ComboBox
+    Friend WithEvents txtPassword As System.Windows.Forms.TextBox
+    Friend WithEvents txtUsername As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents cmdCancel As System.Windows.Forms.Button
+    Friend WithEvents cmdSave As System.Windows.Forms.Button
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents AddToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DeleteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CalculateSalaryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+End Class
