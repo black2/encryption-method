@@ -1,0 +1,129 @@
+Imports System.Data.OleDb
+Public Class frmEmployee
+
+    Private Sub cmdCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCancel.Click
+        txtMode(False)
+        lvEmployee.Focus()
+    End Sub
+
+    Private Sub txtMode(ByVal tmode As Boolean)
+        txtEmpno.Enabled = tmode
+        txtName.Enabled = tmode
+        txtPosition.Enabled = tmode
+        txtRate.Enabled = tmode
+        cboGender.Enabled = tmode
+        txtAddress.Enabled = tmode
+        txtPhone.Enabled = tmode
+        cmdSave.Visible = tmode
+        cmdCancel.Visible = tmode
+    End Sub
+
+    Private Sub cmdSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdSave.Click
+        If txtEmpno.Text = "" Then
+            MsgBox("Invalid employee number", MsgBoxStyle.Critical, "Error")
+            txtEmpno.Focus()
+            Exit Sub
+        End If
+        If txtName.Text = "" Then
+            MsgBox("Must provide the employee name", MsgBoxStyle.Critical, "Error")
+            txtName.Focus()
+            Exit Sub
+        End If
+        If txtAddress.Text = "" Or txtPhone.Text = "" Or txtPosition.Text = "" Or txtRate.Text = "" Or cboGender.Text = "" Then
+            MsgBox("Please provide all the information of the employee", MsgBoxStyle.Critical, "Error")
+            txtAddress.Focus()
+            Exit Sub
+        End If
+        Dim sql As String
+        Try
+            If cmdSave.Tag = "add" Then
+                sql = "INSERT INTO tblEmployee VALUES('" & txtEmpno.Text & "','" & txtName.Text & "','" & txtPosition.Text & "'," & txtRate.Text & ",'" & cboGender.Text & "','" & txtAddress.Text & "','" & txtPhone.Text & "')"
+                ExecSQL(sql)
+            Else
+                sql = "UPDATE tblEMployee SET EmpName = '" & txtName.Text & "', [Position] = '" & txtPosition.Text & "', Rate = " & txtRate.Text & ",Gender = '" & cboGender.Text & "', Address = '" & txtAddress.Text & "', Phone = '" & txtPhone.Text & "' WHERE EmpNo = '" & txtEmpno.Text & "'"
+                ExecSQL(sql)
+            End If
+
+            MsgBox("Record saved!", MsgBoxStyle.Information, "Save")
+            FillList(lvEmployee, GetData("SELECT * FROM tblEmployee"))
+            txtMode(False)
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+        End Try
+
+    End Sub
+
+    Private Sub AddToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddToolStripMenuItem.Click
+        txtMode(True)
+        txtEmpno.Focus()
+        cmdSave.Tag = "add"
+        txtEmpno.Text = ""
+        txtName.Text = ""
+        txtPosition.Text = ""
+        txtRate.Text = ""
+        cboGender.Text = ""
+        txtAddress.Text = ""
+        txtPhone.Text = ""
+    End Sub
+
+    Private Sub EditToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditToolStripMenuItem.Click
+        txtMode(True)
+        txtEmpno.Enabled = False
+        cmdSave.Tag = "edit"
+        txtEmpno.Focus()
+    End Sub
+
+    Private Sub lvEmployee_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lvEmployee.MouseDown
+        If e.Button = Windows.Forms.MouseButtons.Right Then
+            ContextMenuStrip1.Show(lvEmployee, New Point(e.X, e.Y))
+        End If
+    End Sub
+
+    Private Sub lvEmployee_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lvEmployee.SelectedIndexChanged
+        Try
+            With lvEmployee.FocusedItem
+                txtEmpno.Text = .Text
+                txtName.Text = .SubItems(1).Text
+                txtPosition.Text = .SubItems(2).Text
+                txtRate.Text = .SubItems(3).Text
+                cboGender.Text = .SubItems(4).Text
+                txtAddress.Text = .SubItems(5).Text
+                txtPhone.Text = .SubItems(6).Text
+            End With
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub frmEmployee_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        FillList(lvEmployee, GetData("SELECT * FROM tblEmployee"))
+    End Sub
+
+    Private Sub DeleteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DeleteToolStripMenuItem.Click
+        If MsgBox("Are you sure?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Delete") = MsgBoxResult.Yes Then
+            ExecSQL("DELETE FROM tblEmployee WHERE EmpNo = '" & txtEmpno.Text & "'")
+            MsgBox("Record Deleted", 64, "Delete")
+            FillList(lvEmployee, GetData("SELECT * FROM tblEMployee"))
+        End If
+    End Sub
+
+    Private Sub cmdPrint_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdPrint.Click
+        Dim report As New frmReportViewer
+        Dim rpt As New crRptEmployee
+        RefreshConnection()
+        Dim da As New OleDbDataAdapter("SELECT * FROM tblEmployee", con)
+        Dim ds As New DataSet
+        da.Fill(ds, "tblEmployee")
+
+        rpt.SetDataSource(ds)
+        report.CrystalReportViewer1.ReportSource = rpt
+
+        report.ShowDialog(Me)
+    End Sub
+
+    Private Sub CalculateSalaryToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CalculateSalaryToolStripMenuItem.Click
+        Dim frm As New frmCalculate
+        frm.MdiParent = MdiParent
+        frm.Show()
+    End Sub
+End Class
