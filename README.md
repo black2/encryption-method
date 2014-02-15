@@ -1,6 +1,10 @@
 fancygirl
 =========
 
- All batch 1 in android payroll system , with unaccomplished duties as marked above , please do ahead deadline will be on february 17 , 2014 ..
+ >> Check out the latest edition of codes , make more time to edit, deadline is coming , will be leaving for 3 days next week , pls do improve those comment lines .... 
  
+ regards, 
  ~K
+
+
+ 
