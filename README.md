@@ -1,7 +1,7 @@
 fancygirl
 =========
 
- >>Paki continue nalang sa na rejectan nko og work ganina , naa lang problem gamay .. e edit lang ang necessary e edit :)
+ >> Will be leaving next week :) continue chapters 4-5
 
   regards, 
  ~K
