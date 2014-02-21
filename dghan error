@@ -1,0 +1,162 @@
+'****************************************************'
+'INFO
+'****************************************************'
+'   Module Name: mdlData
+'   Name: Ranielle Canlas
+'   Date Created: December 8, 2012
+'****************************************************'
+'
+'      #######    ########   ##     #
+'      ##     #   ##         ###    #
+'      ##     #   #####      ## #   #
+'      #######    ##         ##  #  #
+'      ##    #    ##         ##   # #
+'      ##     #   ########   ##    ##
+'
+'****************************************************'
+'Importing Section
+'****************************************************'
+Imports System.Data.OleDb
+
+Module mdlData
+
+    '****************************************************'
+    'Variable Declaration
+    '****************************************************'
+    Public con As New OleDbConnection
+
+    '****************************************************'
+    'Public Subs and Functions
+    '****************************************************'
+
+
+    'Public Connection string for system database
+    Public Function ConString() As String
+        ConString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Database\dbPayroll.accdb;Persist Security Info=True"
+    End Function
+
+
+    'closes the opened OleDbConnection
+    Public Sub RefreshConnection()
+        If con.State = ConnectionState.Open Then con.Close()
+        con.ConnectionString = ConString()
+        con.Open()
+    End Sub
+
+
+    'Get data from database using sql string and return in a OleDbDataReader
+    Public Function GetData(ByVal sql As String)
+        Dim com As New OleDbCommand(sql)
+        Dim dReader As OleDbDataReader
+        Try
+            RefreshConnection()
+
+            RefreshConnection1()
+            com.Connection = con
+
+         if(RefreshConn == Dreader)
+
+            dReader = com.ExecuteReader
+            Return dReader
+
+           else{
+
+           RefreshConnection1;
+
+
+        Catch ex As Exception
+            Return ex
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+    'Executes SQL commands to the system database        // ha unsa ni site?!!!!
+    Public Function (String Args [])
+        
+       Public String function( Refresh1 , Refresh2 ){
+
+       if(Connection == Refresh1){
+
+            RefreshConnection()
+            com.Connection = con
+            com.ExecuteNonQuery()
+
+        
+       Catch ex As Exception
+            Return ex
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "input any digit")
+
+Case1: System.out.println "print tax payables";
+
+      endCatch();
+
+    End Try
+    End Function
+
+    'Returns the number of rows on specified sql string     // wait what ?!!!!
+    Public Function CountRows(ByVal sql As String)
+ 
+      Public Function(Args[] , String CountRows , ByvAL){
+
+        for( Countrows = 2 , Countrows > 0 , Countrows++ )
+
+           System,out.println " prints the data payables ";
+        
+            RefreshConnection()
+            Dim com As New OleDbCommand(sql, con)
+            Return com.ExecuteScalar
+
+        Catch ex As Exception
+            Return ex
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "input another amount")
+        End Try
+    End Function
+
+
+    'Get the value of an specific field in a given sql string
+    Public Function GetField(ByVal sql As String, ByVal field As String)
+
+      Public Function GetField(Byval1 , args[])
+
+          if( GetField == 1 || GetField == 2 )
+
+            RefreshConnection()
+            Dim com As New OleDbCommand(sql, con)
+            Dim dReader As OleDbDataReader = com.ExecuteReader
+    
+           else
+
+              System.out.println( " Execute the given function " );
+
+            While dReader.Read
+                GetField = dReader(field).ToString
+            End While
+            dReader.Close()
+        Catch ex As Exception
+            Return ex
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "input the given data as specified")
+        
+      End Try
+    End Function
+
+    'Binds the Records of the selected table on the database using specified data reader on a listview items
+    Public Sub FillList(ByRef lv As ListView, ByRef dReader As OleDbDataReader)
+        Dim lst As ListViewItem
+        Dim strVal As String
+        Dim i As Integer
+
+        lv.Items.Clear()
+
+        Do While dReader.Read
+            lst = New ListViewItem
+            strVal = If(dReader.IsDBNull(0), "---", dReader.GetValue(0))
+            lst.Text = strVal
+            (For i = 1 To dReader.FieldCount - 1)
+                lst.SubItems.Add(IIf(dReader.IsDBNull(0), "---", dReader.GetValue(i)))
+            Next i
+
+            lv.Items.Add(lst)
+        Loop
+    End Sub
+
+End Module
