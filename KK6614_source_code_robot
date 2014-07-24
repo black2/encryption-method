@@ -1,0 +1,105 @@
+
+%*****************************************************************************80
+
+%
+
+%
+% 
+%  
+  timestamp ( );
+
+  fprintf ( 1, '\n' );
+  fprintf ( 1, 'TRI_SURFACE_DISPLAY\n' );
+  fprintf ( 1, '  MATLAB version\n' );
+  fprintf ( 1, '\n' );
+  fprintf ( 1, '  Read the nodes and elements defining\n' );
+  fprintf ( 1, '  a triangulated 3D surface and display the object\n' );
+  fprintf ( 1, '  as a MATLAB shape.\n' );
+%
+%  If at least one command line argument, it's the node file name.
+%
+  if ( nargin < 1 )
+
+    fprintf ( 1, '\n' );
+    fprintf ( 1, 'TRI_SURFACE_DISPLAY:\n' );
+    prefix = input ( 'Enter the common filename prefix:' );
+
+  else
+
+  end
+%
+%  Create the filenames.
+%
+  node_filename    = strcat ( prefix, '_nodes.txt' );
+  element_filename = strcat ( prefix, '_elements.txt' );
+%
+%  Read the node data.
+%
+  [ dim_num, node_num ] = r8mat_header_read ( node_filename );
+
+  fprintf ( 1, '\n' );
+  fprintf ( 1, '  Spatial dimension of nodes = %d\n', dim_num );
+  fprintf ( 1, '  Number of nodes =            %d\n', node_num );
+
+  if ( dim_num ~= 3 )
+    fprintf ( 1, '\n' );
+    fprintf ( 1, 'TRI_SURFACE_DISPLAY - Fatal error!\n' );
+    fprintf ( 1, '  The nodes do not have dimension 3.\n' );
+    error ( 'TRI_SURFACE_DISPLAY - Fatal error!\n' );
+  end
+
+  node_xyz = r8mat_data_read ( node_filename, dim_num, node_num );
+
+  r8mat_transpose_print_some ( dim_num, node_num, node_xyz, ...
+    1, 1, dim_num, 5, '  First five nodes:' );
+%
+%  Read the element data.
+%
+  [ element_order, element_num ] = i4mat_header_read ( element_filename );
+
+  fprintf ( 1, '\n' );
+  fprintf ( 1, '  Order of elements =  %d\n', element_order );
+  fprintf ( 1, '  Number of elements = %d\n', element_num );
+
+  if ( element_order ~= 3 )
+    fprintf ( 1, '\n' );
+    fprintf ( 1, 'TRI_SURFACE_DISPLAY - Fatal error!\n' );
+    fprintf ( 1, '  The elements do not have order 3.\n' );
+    error ( 'TRI_SURFACE_DISPLAY - Fatal error!\n' );
+  end
+
+  element_node = i4mat_data_read ( element_filename, element_order, ...
+    element_num );
+
+  i4mat_transpose_print_some ( element_order, element_num, element_node, ...
+    1, 1, element_order, 5, '  First five elements:' );
+%
+%  Display the image as a collection of polygons.
+%
+  trisurf ( element_node', node_xyz(1,:), node_xyz(2,:), node_xyz(3,:) )
+% colormap ( gray )
+  axis equal;
+  grid on;
+
+  xlabel ( '--X Axis--' )
+  ylabel ( '--Y Axis--' )
+  zlabel ( '--Z Axis--' )
+%
+%  The TITLE function will interpret underscores in the title.
+%  We need to unescape such escape sequences!
+%
+  title_string = s_escape_tex ( element_filename );
+  title ( title_string )
+%
+%  Terminate.
+%
+  fprintf ( 1, '\n' );
+  fprintf ( 1, 'TRI_SURFACE_DISPLAY:\n' );
+  fprintf ( 1, '  Normal end of execution.\n' );
+
+  fprintf ( 1, '\n' );
+  timestamp ( );
+
+  return
+end
+function column_num = file_column_count ( input_file_name )
