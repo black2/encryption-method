@@ -1,28 +1,21 @@
 
-%*****************************************************************************80
-
-%
-
-%
-% 
-%  
-  timestamp ( );
+timestamp ( );
 
   fprintf ( 1, '\n' );
-  fprintf ( 1, 'TRI_SURFACE_DISPLAY\n' );
+  fprintf ( 1, '\n' );
   fprintf ( 1, '  MATLAB version\n' );
   fprintf ( 1, '\n' );
-  fprintf ( 1, '  Read the nodes and elements defining\n' );
-  fprintf ( 1, '  a triangulated 3D surface and display the object\n' );
-  fprintf ( 1, '  as a MATLAB shape.\n' );
+  fprintf ( 1, '  ' );
+  fprintf ( 1, '  \n' );
+  fprintf ( 1, '  .\n' );
 %
-%  If at least one command line argument, it's the node file name.
-%
+ If at least one command line argument, it's the node file name.
+
   if ( nargin < 1 )
 
     fprintf ( 1, '\n' );
-    fprintf ( 1, 'TRI_SURFACE_DISPLAY:\n' );
-    prefix = input ( 'Enter the common filename prefix:' );
+    fprintf ( 1, \n' );
+    prefix = input ( '' );
 
   else
 
@@ -103,3 +96,57 @@
   return
 end
 function column_num = file_column_count ( input_file_name )
+
+_____________________________________________________________________________________________________
+
+Precognition sight neuron: 
+
+incx = 5;
+
+  fprintf ( 1, '\n' );
+  fprintf ( 1, '%s\n', title );
+
+  if ( m <= 0 || n <= 0 )
+    fprintf ( 1, '\n' );
+    fprintf ( 1, '  (None)\n' );
+    return
+  end
+
+  for i2lo = max ( ilo, 1 ) : incx : min ( ihi, m )
+
+    i2hi = i2lo + incx - 1;
+    i2hi = min ( i2hi, m );
+    i2hi = min ( i2hi, ihi );
+
+    inc = i2hi + 1 - i2lo;
+
+    fprintf ( 1, '\n' );
+    fprintf ( 1, '  Row: ' );
+    for i = i2lo : i2hi
+      fprintf ( 1, '%7d       ', i );
+    end
+    fprintf ( 1, '\n' );
+    fprintf ( 1, '  Col\n' );
+
+    j2lo = max ( jlo, 1 );
+    j2hi = min ( jhi, n );
+
+    for j = j2lo : j2hi
+
+      fprintf ( 1, '%5d:', j );
+      for i2 = 1 : inc
+        i = i2lo - 1 + i2;
+        fprintf ( 1, '%12f', a(i,j) );
+      end
+      fprintf ( 1, '\n' );
+
+    end
+
+  end
+
+  return
+end
+function s2 = s_escape_tex ( s1 )
+
+__________________________________________________________________________________________________
+
