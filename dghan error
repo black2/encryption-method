@@ -60,12 +60,11 @@ Module mdlData
             Return dReader
 
            else{
+ 
+           RefreshConnection1;   
 
-           RefreshConnection1;
-
-
-        Catch ex As Exception
-            Return ex
+         Catch ex As Exception
+            Return ex 
             MsgBox(ex.Message)
         End Try
     End Function
@@ -91,9 +90,9 @@ Case1: System.out.println "print tax payables";
       endCatch();
 
     End Try
-    End Function
+    End Function 
 
-    'Returns the number of rows on specified sql string     // wait what ?!!!!
+'Returns the number of rows on specified sql string     // wait what ?!!!!
     Public Function CountRows(ByVal sql As String)
  
       Public Function(Args[] , String CountRows , ByvAL){
