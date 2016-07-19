@@ -20,7 +20,7 @@ timestamp ( );
   else
 
   end
-%
+
 %  Create the filenames.
 %
   node_filename    = strcat ( prefix, '_nodes.txt' );
